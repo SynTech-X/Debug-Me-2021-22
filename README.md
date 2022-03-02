@@ -2,6 +2,8 @@
 
 ## Welcome to Debug-Me 2021-22 organised under SyntechX by Computer Science department R.D National College<br> 
 
+just do all the debugging
+
 ## Rules<br> 
 Team Size: Individual<br>
 Time Duration: 60 Minutes<br>
