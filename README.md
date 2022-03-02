@@ -5,6 +5,7 @@
 ## Rules<br> 
 Team Size: Individual<br>
 Time Duration: 60 Minutes<br>
+dvsd
 Participants will be given 6 pieces of faulty codes.<br>
 Each code will have some type of programming flaw or bug in them.<br>
 Participants are required to debug that code and rectify the errors in them.<br>
