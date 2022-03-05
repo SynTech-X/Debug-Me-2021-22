@@ -1,6 +1,4 @@
-/*
-       Identify the problem here and debug the program.
-*/
+package debug;
 
 public class Problem4 {
 
@@ -23,16 +21,15 @@ public class Problem4 {
         }
     }
 
-    class D extends B, C{
+    class D extends B{
         void foo(){
             System.out.println("Inside Class D");
         }
     }
 
     public static void main(String[] args) {
-
-        D d = new D();
+    	Problem4 p=new 	Problem4();
+    	Problem4.D d = p.new D();
         d.foo();
     }
 }
-
