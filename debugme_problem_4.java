@@ -5,7 +5,7 @@
 public class Problem4 {
 
     class A{
-        void foo(){
+       void foo(){
             System.out.println("Inside Class A");
         }
     }
@@ -23,8 +23,8 @@ public class Problem4 {
         }
     }
 
-    class D extends B, C{
-        void foo(){
+    static class D extends B, C{
+         void foo(){
             System.out.println("Inside Class D");
         }
     }
