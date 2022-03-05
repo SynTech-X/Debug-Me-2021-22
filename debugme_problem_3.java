@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /*
     Problem 3
 
@@ -6,14 +9,14 @@
              , world]
 */
 
-public class Problem4 {
+public class debugme_problem_3 {
 
     public void main(String[] args) {
 
-        List<string> list = new List<string>();
-        list.append("hello");
-        list.append("/n");
-        list.append("world");
+        List<String> list = new ArrayList<String>();
+        list.add("hello");
+        list.add("/n");
+        list.add("world");
 
         System.out.printf(list.toString());
 

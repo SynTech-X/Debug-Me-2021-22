@@ -2,7 +2,7 @@
        Identify the problem here and debug the program.
 */
 
-public class Problem4 {
+public class debugme_problem_4 {
 
     class A{
         void foo(){
@@ -23,16 +23,14 @@ public class Problem4 {
         }
     }
 
-    class D extends B, C{
+    class D extends C {
         void foo(){
             System.out.println("Inside Class D");
         }
     }
+     public static void main(String[] args) {
 
-    public static void main(String[] args) {
-
-        D d = new D();
+        D d = new debugme_problem_4().new D();
         d.foo();
     }
 }
-
