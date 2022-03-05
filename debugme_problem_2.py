@@ -1,39 +1,66 @@
-"""
-PROBLEM 2
-MAX POINT = 5
+def rotateMatrix(mat):
 
-EXPECTED OUTPUT
+	if not len(mat):
+		return
 
-==>         8 7 6 5 4 3 2 1 0 
-                8 7 6 5 4 3 2 1 0 
-                8 7 6 5 4 3 2 1 0 
-                8 7 6 5 4 3 2 1 0 
-                8 7 6 5 4 3 2 1 0 
-                8 7 6 5 4 3 2 1 0 
-                8 7 6 5 4 3 2 1 0 
-                8 7 6 5 4 3 2 1 0 
-                8 7 6 5 4 3 2 1 0 
+	top = 0
+	bottom = len(mat)-1
 
-"""
-N = 3;
-def rotateMatrix(matrix):
-        i = N - 1;
-        while(i >0):
-                j = N - 1;
-                while(j > 0):
-                        print(matrix[j][i], end = "\n");
-                        j = j +1;
-                print();
-                i = i +1;
+	left = 0
+	right = len(mat[0])-1
 
-matrix = [[0, 1, 2, 3, 4, 5, 6, 7, 8],
-         [0, 1, 2, 3, 4, 5, 6, 7, 8],
-       [0, 1, 2, 3, 4, 5, 6, 7, 8],
-       [0, 1, 2, 3, 4, 5, 6, 7, 8],
-       [0, 1, 2, 3, 4, 5, 6, 7, 8],
-       [0, 1, 2, 3, 4, 5, 6, 7, 8],
-       [0, 1, 2, 3, 4, 5, 6, 7, 8],
-       [0, 1, 2, 3, 4, 5, 6, 7, 8],
-       [0, 1, 2, 3, 4, 5, 6, 7, 8]]
+	while left < right and top < bottom:
 
-rotateMatrix(matrix);
+
+		prev = mat[top+1][left]
+
+		for i in range(left, right+1):
+			curr = mat[top][i]
+			mat[top][i] = prev
+			prev = curr
+
+		top += 1
+
+		for i in range(top, bottom+1):
+			curr = mat[i][right]
+			mat[i][right] = prev
+			prev = curr
+
+		right -= 1
+
+		for i in range(right, left-1, -1):
+			curr = mat[bottom][i]
+			mat[bottom][i] = prev
+			prev = curr
+
+		bottom -= 1
+
+		for i in range(bottom, top-1, -1):
+			curr = mat[i][left]
+			mat[i][left] = prev
+			prev = curr
+
+		left += 1
+
+	return mat
+
+def printMatrix(mat):
+	for row in mat:
+		print row
+
+
+matrix =[
+			[8, 7, 6, 5, 4, 3, 2, 1, 0],
+         [8, 7, 6, 5, 4, 3, 2, 1, 0],
+       [8, 7, 6, 5, 4, 3, 2, 1, 0],
+       [8, 7, 6, 5, 4, 3, 2, 1, 0],
+       [8, 7, 6, 5, 4, 3, 2, 1, 0],
+       [8, 7, 6, 5, 4, 3, 2, 1, 0],
+       [8, 7, 6, 5, 4, 3, 2, 1, 0],
+       [8, 7, 6, 5, 4, 3, 2, 1, 0],
+      [8, 7, 6, 5, 4, 3, 2, 1, 0]
+		]
+
+
+matrix = rotateMatrix(matrix)
+printMatrix(matrix
