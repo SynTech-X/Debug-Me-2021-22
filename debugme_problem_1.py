@@ -4,9 +4,8 @@ MAX POINTS = 5
 EXPECTED OUTPUT = apple mango banana grapes kiwi
 """
 
-fruit=("apple , mango, orange, banana, grapes")
-
+fruit=['apple','Mango','orange','banana','grapes']
 fruit.append("kiwi")
-
-for i in fruit
-    printf("i");
+fruit.remove("orange")
+print(fruit)
+# for i in fruit:
