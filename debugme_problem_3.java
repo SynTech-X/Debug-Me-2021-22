@@ -5,15 +5,15 @@
             [hello,
              , world]
 */
-
+import java.util.ArrayList;
 public class Problem4 {
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
-        List<string> list = new List<string>();
-        list.append("hello");
-        list.append("/n");
-        list.append("world");
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("hello");
+        list.add("\n");
+        list.add("world");
 
         System.out.printf(list.toString());
 
