@@ -15,16 +15,16 @@ EXPECTED OUTPUT
                 8 7 6 5 4 3 2 1 0 
 
 """
-N = 3;
+N = 3
 def rotateMatrix(matrix):
-        i = N - 1;
+        i = N - 1
         while(i >0):
-                j = N - 1;
+                j = N - 1
                 while(j > 0):
-                        print(matrix[j][i], end = "\n");
-                        j = j +1;
-                print();
-                i = i +1;
+                        print(matrix[j][i], end = "\n")
+                        j = j +1
+                print()
+                i = i +1
 
 matrix = [[0, 1, 2, 3, 4, 5, 6, 7, 8],
          [0, 1, 2, 3, 4, 5, 6, 7, 8],
@@ -36,4 +36,4 @@ matrix = [[0, 1, 2, 3, 4, 5, 6, 7, 8],
        [0, 1, 2, 3, 4, 5, 6, 7, 8],
        [0, 1, 2, 3, 4, 5, 6, 7, 8]]
 
-rotateMatrix(matrix);
+rotateMatrix(matrix)
