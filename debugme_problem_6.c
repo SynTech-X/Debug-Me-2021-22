@@ -45,7 +45,7 @@ void fill_alphabets(struct ArrayContainer *a, const int n)
 
 void display_array(struct ArrayContainer *a)
 {
-    for (int i = 0; i < a->size; ++i)
+    for (int i = 0; i < a->size; i++)
     {
         printf("%c ", a->arr[i]);
     }
@@ -64,4 +64,5 @@ int main()
 
     fill_alphabets(&a, 26);
     display_array(&a);
+    return 0;
 }
