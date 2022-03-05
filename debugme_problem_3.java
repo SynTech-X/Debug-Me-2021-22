@@ -6,11 +6,11 @@
              , world]
 */
 
-public class Problem4 {
+public class Main {
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
-        List<string> list = new List<string>();
+        List<String> list = new ArrayList<String>();
         list.append("hello");
         list.append("/n");
         list.append("world");
