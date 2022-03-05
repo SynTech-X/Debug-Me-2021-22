@@ -47,7 +47,7 @@ char *my_strcat2(char *dest, const char *source)
     const size_t len = strlen(dest);
     size_t i = 0;
 
-    for (; source[i] != '\0'; ++i)
+    for (; source[i] != 0; ++i)
         dest[len + i] = source[i];
 
     dest[len + i] = '\0';
